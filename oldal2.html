@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi az a Git/GitHub</title>
+    <link rel="stylesheet" href="git.css">
+</head>
+<body>
+    <h1 id="git">Git Parancsok</h1>
+    <h2>git config --global user.name "Github-on megadott név" és git config --global user.email "Github-on regisztrált emailcím"</h2>
+    <p>Ezzekel a parancsokkal lehet megadni a fiok infórmációt hogy fell tudd tölteni a git-be amelyikbe akarod.</p>
+    <h2>git init</h2>
+    <p>Ezzel a parancsal lehet inicializálni a mappát, hogy majd fel lehessen tölteni GitHubra.</p>
+    <h2>git remote add origin repository-link (github-ból code-ból elérhető a közvetlen link)</h2>
+    <p>Ezzel pedig a Repository-it tudod megadni amelyikbe fel fogod tölteni a változtatásokat.</p>
+    <h2>git remote -v</h2>
+    <p>Meg lehet nézni, hogy jó-e a kapcsolat a kliens és a repo között.</p>
+    <h2>git add file-name</h2>
+    <p>Amikor csinálsz egy változtatást vagy egy fájlt akkor ezzel a parancsal lehet betenni a staging-area-ba.</p>
+    <h2>git add .</h2>
+    <p>Ez akkor hasznos amikor mindent be akarsz rakni a mappából.</p>
+    <h2>git status</h2>
+    <p>Meglehet nézni a fájlokat amik benne vannak a staging-area-ba.</p>
+    <h2>git commit -m "Kötelező megjegyzést tenni"</h2>
+    <p>A staging-area-ból a repóba való töltéshez ezt a parancsot kell használni.</p>
+    <h2>git log</h2>
+    <p>Eddigi verzió megtekintése ami valahogy így fog kinézni <br>
+        commit a661d9249509f8aa8f81f6f58129d57eb36b81d6
+        Author: Gergo Roth roth@dcs.uni-pannon.hu
+        Date: Wed Jul 6 18:36:01 2016 +0200
+        My first commit.
+    </p>
+    <h2>git push origin master</h2>
+    <p>Ezzel lehet feltölteni véglegesen a GitHubra.</p>
+    <h1 id="git">Példa</h1>
+    <p>git init <br>
+       git config --global user.name "Github-os név"<br>
+       git config --global user.email "Github-on megadott emailcím"<br>
+       git remote add origin repository-link<br>
+       git remote -v (ezt ki lehet hagyni, de jó ötlet biztonság kedvéért<br>
+       git add .<br>
+       git status (ez is ki hagyható)<br>
+       git commit -m "Kötelező megjegyzés"<br>
+       git log (ugyanúgy kihagyható)<br>
+       git remote -v (megint kihagyható)
+       git push origin master</p>
+       <a href="oldal1.html"><img src="vissza.JPG" alt="Itt kéne lennie a képnek ami vissza visz az előző oldalra" title="Lépj az előző oldalra."></a>
+</body>
+</html>
